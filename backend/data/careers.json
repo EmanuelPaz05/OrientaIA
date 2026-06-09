@@ -1,0 +1,103 @@
+[
+  {
+    "id": "ing-sistemas",
+    "name": "Ingenieria en Sistemas",
+    "area": "tecnologia",
+    "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+    "modality": "Presencial",
+    "duration": "5 anos",
+    "location": "Cordoba Capital",
+    "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica."
+  },
+  {
+    "id": "analista-sistemas",
+    "name": "Analista de Sistemas",
+    "area": "tecnologia",
+    "institution": "Instituto Superior Santo Domingo",
+    "modality": "Presencial / Virtual",
+    "duration": "3 anos",
+    "location": "Cordoba Capital",
+    "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas."
+  },
+  {
+    "id": "enfermeria",
+    "name": "Enfermeria",
+    "area": "salud",
+    "institution": "Universidad Nacional de Cordoba",
+    "modality": "Presencial",
+    "duration": "5 anos",
+    "location": "Cordoba Capital",
+    "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud."
+  },
+  {
+    "id": "psicologia",
+    "name": "Psicologia",
+    "area": "sociales",
+    "institution": "Universidad Nacional de Cordoba",
+    "modality": "Presencial",
+    "duration": "5 anos",
+    "location": "Cordoba Capital",
+    "description": "Estudio de la conducta humana, procesos mentales e intervencion profesional."
+  },
+  {
+    "id": "contador",
+    "name": "Contador Publico",
+    "area": "administracion",
+    "institution": "Universidad Nacional de Cordoba",
+    "modality": "Presencial",
+    "duration": "5 anos",
+    "location": "Cordoba Capital",
+    "description": "Gestion contable, impositiva, financiera y administrativa de organizaciones."
+  },
+  {
+    "id": "marketing",
+    "name": "Marketing Digital",
+    "area": "comunicacion",
+    "institution": "Colegio Universitario IES",
+    "modality": "Presencial / Virtual",
+    "duration": "3 anos",
+    "location": "Cordoba Capital",
+    "description": "Comunicacion comercial, estrategias digitales y analisis de publicos."
+  },
+  {
+    "id": "diseno-grafico",
+    "name": "Diseno Grafico",
+    "area": "arte",
+    "institution": "Universidad Provincial de Cordoba",
+    "modality": "Presencial",
+    "duration": "4 anos",
+    "location": "Cordoba Capital",
+    "description": "Produccion visual, identidad, comunicacion grafica y proyectos creativos."
+  },
+  {
+    "id": "profesorado-matematica",
+    "name": "Profesorado de Matematica",
+    "area": "educacion",
+    "institution": "Instituto Superior del Profesorado Tecnologico",
+    "modality": "Presencial",
+    "duration": "4 anos",
+    "location": "Cordoba Capital",
+    "description": "Formacion docente para ensenar matematica en nivel secundario y superior."
+  },
+  {
+    "id": "bioquimica",
+    "name": "Bioquimica",
+    "area": "salud",
+    "institution": "Universidad Nacional de Cordoba",
+    "modality": "Presencial",
+    "duration": "5 anos",
+    "location": "Cordoba Capital",
+    "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud."
+  },
+  {
+    "id": "recursos-humanos",
+    "name": "Recursos Humanos",
+    "area": "administracion",
+    "institution": "Universidad Empresarial Siglo 21",
+    "modality": "Presencial / Virtual",
+    "duration": "4 anos",
+    "location": "Cordoba Capital",
+    "description": "Gestion de personas, seleccion, capacitacion y clima organizacional."
+  }
+]
+

@@ -1,0 +1,402 @@
+:root {
+  color: #1f2933;
+  background: #eef2f6;
+  font-family: Arial, Helvetica, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #bcc7d3;
+  background: #ffffff;
+  color: #1f2933;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  border-color: #32706d;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.app-shell {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 48px;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: flex-start;
+  padding: 22px 0 26px;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #32706d;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.subtitle {
+  margin: 10px 0 0;
+  color: #5c6875;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+}
+
+nav button.active,
+.primary {
+  background: #32706d;
+  border-color: #32706d;
+  color: #ffffff;
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #d9e0e8;
+  border-radius: 8px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(33, 44, 58, 0.06);
+}
+
+.panel h2,
+.panel h3,
+.panel h4 {
+  margin-top: 0;
+}
+
+.compact {
+  position: sticky;
+  top: 18px;
+}
+
+.steps {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+.steps li {
+  color: #687789;
+}
+
+.steps .current {
+  color: #1f2933;
+  font-weight: 700;
+}
+
+.steps .done {
+  color: #32706d;
+}
+
+.note,
+.section-title p,
+.question h3 + p,
+.career-card p,
+.list-block p {
+  color: #5c6875;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #c9d3df;
+  border-radius: 6px;
+  padding: 11px 12px;
+  color: #1f2933;
+  background: #fbfcfd;
+}
+
+textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+.section-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+.section-title h2,
+.section-title p {
+  margin-bottom: 0;
+}
+
+.progress {
+  min-width: 58px;
+  text-align: center;
+  border-radius: 999px;
+  padding: 9px 12px;
+  background: #e6f0ef;
+  color: #245a57;
+  font-weight: 700;
+}
+
+.questions {
+  display: grid;
+  gap: 14px;
+}
+
+.question {
+  border: 1px solid #dde5ed;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fbfcfd;
+}
+
+.question h3 {
+  font-size: 17px;
+  margin-bottom: 12px;
+}
+
+.options {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.options button {
+  text-align: left;
+  min-height: 54px;
+}
+
+.options .selected {
+  border-color: #32706d;
+  background: #e6f0ef;
+  color: #153f3d;
+  font-weight: 700;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.result-grid,
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  border-radius: 999px;
+  padding: 8px 11px;
+  background: #e6f0ef;
+  color: #245a57;
+  font-weight: 700;
+}
+
+.career-list {
+  display: grid;
+  gap: 12px;
+}
+
+.career-card {
+  border: 1px solid #dde5ed;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fbfcfd;
+}
+
+.career-card dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin: 14px 0;
+}
+
+dt {
+  color: #687789;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+dd {
+  margin: 3px 0 0;
+  font-weight: 700;
+}
+
+.orientador {
+  min-height: 440px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.metrics article {
+  border: 1px solid #dde5ed;
+  border-radius: 8px;
+  padding: 16px;
+  background: #fbfcfd;
+}
+
+.metrics strong {
+  display: block;
+  font-size: 32px;
+}
+
+.metrics span {
+  color: #5c6875;
+}
+
+.list-block {
+  border: 1px solid #dde5ed;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.list-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.list-block li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid #eef2f6;
+  padding-bottom: 8px;
+}
+
+.table {
+  border: 1px solid #dde5ed;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1.3fr 0.7fr 1fr 0.7fr;
+  gap: 12px;
+  padding: 12px 14px;
+  border-top: 1px solid #eef2f6;
+}
+
+.table-row:first-child {
+  border-top: 0;
+}
+
+.table-row.head {
+  background: #f5f7fa;
+  font-weight: 700;
+}
+
+.status {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  margin: 0;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #1f2933;
+  color: #ffffff;
+}
+
+@media (max-width: 860px) {
+  .topbar,
+  .workspace,
+  .result-grid,
+  .dashboard-grid,
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar {
+    display: grid;
+  }
+
+  .compact {
+    position: static;
+  }
+
+  .student-form,
+  .options,
+  .career-card dl,
+  .table-row {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav button {
+    flex: 1;
+  }
+}
+
