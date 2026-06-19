@@ -20,6 +20,11 @@ function App() {
     interests: ""
   });
   const [status, setStatus] = useState("");
+  const [showAIPanel, setShowAIPanel] = useState(false);
+  const [aiConfig, setAiConfig] = useState(() => {
+    try { return JSON.parse(localStorage.getItem("orientaia_ai") || "{}"); }
+    catch { return {}; }
+  });
 
   useEffect(() => {
     fetch(`${API_URL}/questionnaire`)
@@ -67,12 +72,26 @@ function App() {
     setStatus("");
   }
 
+  function saveAIConfig(newConfig) {
+    setAiConfig(newConfig);
+    localStorage.setItem("orientaia_ai", JSON.stringify(newConfig));
+    setShowAIPanel(false);
+  }
+
   async function sendQuestionnaire() {
-    setStatus("Generando reporte...");
+    const usingAI = aiConfig.provider && aiConfig.provider !== "none";
+    setStatus(usingAI ? `Generando reporte con IA (${aiConfig.provider})...` : "Generando reporte...");
+
+    const aiHeaders = {};
+    if (usingAI) {
+      aiHeaders["x-ai-provider"] = aiConfig.provider;
+      if (aiConfig.apiKey) aiHeaders["x-ai-key"] = aiConfig.apiKey;
+      if (aiConfig.model) aiHeaders["x-ai-model"] = aiConfig.model;
+    }
 
     const response = await fetch(`${API_URL}/questionnaire`, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: { "Content-Type": "application/json", ...aiHeaders },
       body: JSON.stringify({ studentId: student.id, answers })
     });
 
@@ -114,6 +133,9 @@ function App() {
           </button>
           <button className={view === "orientador" ? "active" : ""} onClick={() => setView("orientador")}>
             Orientador
+          </button>
+          <button className="ai-toggle" onClick={() => setShowAIPanel(true)} title="Configurar motor de IA">
+            {aiConfig.provider && aiConfig.provider !== "none" ? `⚡ ${aiConfig.provider}` : "⚙ IA"}
           </button>
         </nav>
       </header>
@@ -215,6 +237,10 @@ function App() {
       )}
 
       {status && <p className="status">{status}</p>}
+
+      {showAIPanel && (
+        <AISettings config={aiConfig} onSave={saveAIConfig} onClose={() => setShowAIPanel(false)} />
+      )}
     </main>
   );
 }
@@ -230,6 +256,13 @@ function Report({ report, onRestart }) {
         <button type="button" onClick={onRestart}>Nuevo alumno</button>
       </div>
 
+      {report.aiSummary && (
+        <div className="ai-summary">
+          <span className="ai-badge">⚡ Analisis generado por IA · {report.engine}</span>
+          <p>{report.aiSummary}</p>
+        </div>
+      )}
+
       <div className="result-grid">
         <div>
           <h3>Areas de mayor afinidad</h3>
@@ -242,8 +275,9 @@ function Report({ report, onRestart }) {
         <div>
           <h3>Resumen</h3>
           <p>
-            El sistema compara respuestas del alumno con areas vocacionales y propone carreras
-            relacionadas. El resultado es orientativo y sirve como apoyo para una entrevista.
+            {report.aiSummary
+              ? "El analisis de arriba fue generado por IA en base al perfil del alumno. Las carreras a continuacion surgen del cuestionario vocacional."
+              : "El sistema compara respuestas del alumno con areas vocacionales y propone carreras relacionadas. El resultado es orientativo y sirve como apoyo para una entrevista."}
           </p>
         </div>
       </div>
@@ -334,6 +368,97 @@ function ListBlock({ title, items, empty }) {
         </ul>
       )}
     </article>
+  );
+}
+
+const PROVIDER_LABELS = {
+  none: "Sin IA (modo reglas)",
+  ollama: "Ollama · local y gratuito",
+  openai: "OpenAI (GPT)",
+  claude: "Claude (Anthropic)",
+  gemini: "Gemini (Google)"
+};
+
+const MODEL_OPTIONS = {
+  ollama: ["phi3", "llama3.2", "llama3.1", "mistral", "gemma2", "qwen2.5"],
+  openai: ["gpt-4o-mini", "gpt-4o", "gpt-3.5-turbo"],
+  claude: ["claude-haiku-4-5-20251001", "claude-sonnet-4-6"],
+  gemini: ["gemini-1.5-flash", "gemini-1.5-pro", "gemini-2.0-flash-exp"]
+};
+
+function AISettings({ config, onSave, onClose }) {
+  const [form, setForm] = React.useState(() => {
+    const base = { provider: "none", apiKey: "", model: "", ...config };
+    if (!base.model && MODEL_OPTIONS[base.provider]) {
+      base.model = MODEL_OPTIONS[base.provider][0];
+    }
+    return base;
+  });
+  const needsKey = ["openai", "claude", "gemini"].includes(form.provider);
+
+  function update(field, value) {
+    setForm((prev) => ({ ...prev, [field]: value }));
+  }
+
+  function changeProvider(provider) {
+    const defaultModel = MODEL_OPTIONS[provider]?.[0] || "";
+    setForm((prev) => ({ ...prev, provider, model: defaultModel, apiKey: "" }));
+  }
+
+  return (
+    <div className="modal-overlay" onClick={onClose}>
+      <div className="modal-panel" onClick={(e) => e.stopPropagation()}>
+        <div className="section-title">
+          <h2>Configuracion de IA</h2>
+          <button type="button" onClick={onClose}>✕</button>
+        </div>
+        <p className="note">Selecciona un motor de IA para generar analisis vocacionales personalizados. Si no configuras nada, el sistema sigue funcionando con el modo de reglas.</p>
+
+        <label>
+          Motor de IA
+          <select value={form.provider} onChange={(e) => changeProvider(e.target.value)}>
+            {Object.entries(PROVIDER_LABELS).map(([v, l]) => (
+              <option key={v} value={v}>{l}</option>
+            ))}
+          </select>
+        </label>
+
+        {needsKey && (
+          <label>
+            API Key
+            <input
+              type="password"
+              value={form.apiKey}
+              onChange={(e) => update("apiKey", e.target.value)}
+              placeholder="Pega tu API key aqui"
+            />
+            <small className="field-hint">Tu key solo se guarda en este navegador, nunca en el servidor.</small>
+          </label>
+        )}
+
+        {form.provider !== "none" && form.provider !== "ollama" && MODEL_OPTIONS[form.provider] && (
+          <label>
+            Modelo
+            <select value={form.model} onChange={(e) => update("model", e.target.value)}>
+              {MODEL_OPTIONS[form.provider].map((m) => (
+                <option key={m} value={m}>{m}</option>
+              ))}
+            </select>
+          </label>
+        )}
+
+        {form.provider === "ollama" && (
+          <p className="note">Modelo: <strong>phi3</strong> (local, gratuito). Asegurate de tener Ollama corriendo.</p>
+        )}
+
+        <div className="actions">
+          <button type="button" onClick={onClose}>Cancelar</button>
+          <button className="primary" type="button" onClick={() => onSave(form)}>
+            Guardar configuracion
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 

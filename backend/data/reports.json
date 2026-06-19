@@ -1,1 +1,470 @@
-[]
+[
+  {
+    "id": "rep-1781869060330",
+    "studentId": "stu-1781869055323",
+    "studentName": "Juan",
+    "course": "6",
+    "school": "asdasd",
+    "answers": {
+      "q1": "tecnologia",
+      "q2": "salud",
+      "q3": "tecnologia",
+      "q4": "salud",
+      "q5": "salud"
+    },
+    "scores": {
+      "tecnologia": 2,
+      "salud": 3,
+      "educacion": 0,
+      "administracion": 0,
+      "arte": 0,
+      "comunicacion": 0,
+      "sociales": 0
+    },
+    "topAreas": [
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 3
+      },
+      {
+        "area": "tecnologia",
+        "label": "Tecnologia",
+        "score": 2
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "ing-sistemas",
+        "name": "Ingenieria en Sistemas",
+        "area": "tecnologia",
+        "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "analista-sistemas",
+        "name": "Analista de Sistemas",
+        "area": "tecnologia",
+        "institution": "Instituto Superior Santo Domingo",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      }
+    ],
+    "createdAt": "2026-06-19T11:37:40.330Z",
+    "aiSummary": null,
+    "engine": "rules"
+  },
+  {
+    "id": "rep-1781869243152",
+    "studentId": "stu-1781869237871",
+    "studentName": "Messi",
+    "course": "sadasd",
+    "school": "sadasd",
+    "answers": {
+      "q1": "tecnologia",
+      "q2": "salud",
+      "q3": "sociales",
+      "q4": "arte",
+      "q5": "comunicacion"
+    },
+    "scores": {
+      "tecnologia": 1,
+      "salud": 1,
+      "educacion": 0,
+      "administracion": 0,
+      "arte": 1,
+      "comunicacion": 1,
+      "sociales": 1
+    },
+    "topAreas": [
+      {
+        "area": "tecnologia",
+        "label": "Tecnologia",
+        "score": 1
+      },
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 1
+      },
+      {
+        "area": "arte",
+        "label": "Arte y diseno",
+        "score": 1
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "ing-sistemas",
+        "name": "Ingenieria en Sistemas",
+        "area": "tecnologia",
+        "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "analista-sistemas",
+        "name": "Analista de Sistemas",
+        "area": "tecnologia",
+        "institution": "Instituto Superior Santo Domingo",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "diseno-grafico",
+        "name": "Diseno Grafico",
+        "area": "arte",
+        "institution": "Universidad Provincial de Cordoba",
+        "modality": "Presencial",
+        "duration": "4 anos",
+        "location": "Cordoba Capital",
+        "description": "Produccion visual, identidad, comunicacion grafica y proyectos creativos.",
+        "reason": "Coincide con tu afinidad por arte y diseno."
+      }
+    ],
+    "createdAt": "2026-06-19T11:40:43.152Z",
+    "aiSummary": null,
+    "engine": "rules"
+  },
+  {
+    "id": "rep-1781869753933",
+    "studentId": "stu-1781869749610",
+    "studentName": "Messi",
+    "course": "asd",
+    "school": "asdasd",
+    "answers": {
+      "q1": "tecnologia",
+      "q2": "salud",
+      "q3": "tecnologia",
+      "q4": "salud",
+      "q5": "salud"
+    },
+    "scores": {
+      "tecnologia": 2,
+      "salud": 3,
+      "educacion": 0,
+      "administracion": 0,
+      "arte": 0,
+      "comunicacion": 0,
+      "sociales": 0
+    },
+    "topAreas": [
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 3
+      },
+      {
+        "area": "tecnologia",
+        "label": "Tecnologia",
+        "score": 2
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "ing-sistemas",
+        "name": "Ingenieria en Sistemas",
+        "area": "tecnologia",
+        "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "analista-sistemas",
+        "name": "Analista de Sistemas",
+        "area": "tecnologia",
+        "institution": "Instituto Superior Santo Domingo",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      }
+    ],
+    "createdAt": "2026-06-19T11:49:13.933Z",
+    "aiSummary": null,
+    "engine": "rules"
+  },
+  {
+    "id": "rep-1781869841788",
+    "studentId": "stu-1781869837595",
+    "studentName": "dasd",
+    "course": "sad",
+    "school": "sad",
+    "answers": {
+      "q1": "tecnologia",
+      "q2": "salud",
+      "q3": "comunicacion",
+      "q4": "administracion",
+      "q5": "salud"
+    },
+    "scores": {
+      "tecnologia": 1,
+      "salud": 2,
+      "educacion": 0,
+      "administracion": 1,
+      "arte": 0,
+      "comunicacion": 1,
+      "sociales": 0
+    },
+    "topAreas": [
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 2
+      },
+      {
+        "area": "tecnologia",
+        "label": "Tecnologia",
+        "score": 1
+      },
+      {
+        "area": "administracion",
+        "label": "Administracion",
+        "score": 1
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "ing-sistemas",
+        "name": "Ingenieria en Sistemas",
+        "area": "tecnologia",
+        "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "analista-sistemas",
+        "name": "Analista de Sistemas",
+        "area": "tecnologia",
+        "institution": "Instituto Superior Santo Domingo",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "contador",
+        "name": "Contador Publico",
+        "area": "administracion",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Gestion contable, impositiva, financiera y administrativa de organizaciones.",
+        "reason": "Coincide con tu afinidad por administracion."
+      }
+    ],
+    "createdAt": "2026-06-19T11:50:41.788Z",
+    "aiSummary": null,
+    "engine": "rules"
+  },
+  {
+    "id": "rep-1781869959892",
+    "studentId": "stu-1781869955881",
+    "studentName": "asdasd",
+    "course": "sadasd",
+    "school": "asd",
+    "answers": {
+      "q1": "tecnologia",
+      "q2": "salud",
+      "q3": "comunicacion",
+      "q4": "salud",
+      "q5": "salud"
+    },
+    "scores": {
+      "tecnologia": 1,
+      "salud": 3,
+      "educacion": 0,
+      "administracion": 0,
+      "arte": 0,
+      "comunicacion": 1,
+      "sociales": 0
+    },
+    "topAreas": [
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 3
+      },
+      {
+        "area": "tecnologia",
+        "label": "Tecnologia",
+        "score": 1
+      },
+      {
+        "area": "comunicacion",
+        "label": "Comunicacion",
+        "score": 1
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "ing-sistemas",
+        "name": "Ingenieria en Sistemas",
+        "area": "tecnologia",
+        "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "analista-sistemas",
+        "name": "Analista de Sistemas",
+        "area": "tecnologia",
+        "institution": "Instituto Superior Santo Domingo",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "marketing",
+        "name": "Marketing Digital",
+        "area": "comunicacion",
+        "institution": "Colegio Universitario IES",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Comunicacion comercial, estrategias digitales y analisis de publicos.",
+        "reason": "Coincide con tu afinidad por comunicacion."
+      }
+    ],
+    "createdAt": "2026-06-19T11:52:39.892Z",
+    "aiSummary": "¡Hola asdasd! Vamos a explorar juntos tus pasiones y cómo te encajan estas increíbles carreras que se te han presentado: tu curiosidad por la salud puede ser un pilar esencial en enfermería o bioquímica, ofreciendo una mezcla entre arte y ciencia para ayudar a los demás. La tecnología captura también nuestra imaginación; ingeniería de sistemas te permitirá diseñar maravillas que cambien vidas. Y aquí tienes un terreno común: el marketing digital, donde la comunicación es clave para conectarte y compartir tu pasión por los avances en salud y tecnología. ¡Estoy seguro de que encontrarás una carrera brillante al sol!",
+    "engine": "ai:ollama"
+  }
+]

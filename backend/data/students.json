@@ -1,1 +1,56 @@
-[]
+[
+  {
+    "id": "stu-1781011090731",
+    "name": "Juan",
+    "age": "20",
+    "course": "6",
+    "school": "asdasd",
+    "interests": "asdasd",
+    "createdAt": "2026-06-09T13:18:10.731Z"
+  },
+  {
+    "id": "stu-1781869055323",
+    "name": "Juan",
+    "age": "22",
+    "course": "6",
+    "school": "asdasd",
+    "interests": "",
+    "createdAt": "2026-06-19T11:37:35.323Z"
+  },
+  {
+    "id": "stu-1781869237871",
+    "name": "Messi",
+    "age": "123",
+    "course": "sadasd",
+    "school": "sadasd",
+    "interests": "",
+    "createdAt": "2026-06-19T11:40:37.871Z"
+  },
+  {
+    "id": "stu-1781869749610",
+    "name": "Messi",
+    "age": "12",
+    "course": "asd",
+    "school": "asdasd",
+    "interests": "sad",
+    "createdAt": "2026-06-19T11:49:09.610Z"
+  },
+  {
+    "id": "stu-1781869837595",
+    "name": "dasd",
+    "age": "12",
+    "course": "sad",
+    "school": "sad",
+    "interests": "",
+    "createdAt": "2026-06-19T11:50:37.595Z"
+  },
+  {
+    "id": "stu-1781869955881",
+    "name": "asdasd",
+    "age": "123",
+    "course": "sadasd",
+    "school": "asd",
+    "interests": "asd",
+    "createdAt": "2026-06-19T11:52:35.881Z"
+  }
+]

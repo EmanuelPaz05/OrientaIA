@@ -3,6 +3,7 @@ import cors from "cors";
 import { promises as fs } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
+import { generateAIAnalysis } from "./ai/index.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -188,6 +189,18 @@ app.post("/api/questionnaire", async (req, res) => {
   const careers = await readJson("careers.json");
   const reports = await readJson("reports.json");
   const report = buildReport(student, answers, careers);
+
+  // Intento generar analisis con IA (si el cliente envio configuracion por headers)
+  // Si falla o no hay config, el reporte sigue funcionando con el scoring de reglas
+  const aiConfig = {
+    provider: req.headers["x-ai-provider"] || null,
+    apiKey: req.headers["x-ai-key"] || null,
+    model: req.headers["x-ai-model"] || null
+  };
+
+  const aiSummary = await generateAIAnalysis(student, report.topAreas, report.recommendations, aiConfig);
+  report.aiSummary = aiSummary || null;
+  report.engine = aiSummary ? `ai:${aiConfig.provider}` : "rules";
 
   reports.push(report);
   await writeJson("reports.json", reports);
