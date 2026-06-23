@@ -466,5 +466,294 @@
     "createdAt": "2026-06-19T11:52:39.892Z",
     "aiSummary": "¡Hola asdasd! Vamos a explorar juntos tus pasiones y cómo te encajan estas increíbles carreras que se te han presentado: tu curiosidad por la salud puede ser un pilar esencial en enfermería o bioquímica, ofreciendo una mezcla entre arte y ciencia para ayudar a los demás. La tecnología captura también nuestra imaginación; ingeniería de sistemas te permitirá diseñar maravillas que cambien vidas. Y aquí tienes un terreno común: el marketing digital, donde la comunicación es clave para conectarte y compartir tu pasión por los avances en salud y tecnología. ¡Estoy seguro de que encontrarás una carrera brillante al sol!",
     "engine": "ai:ollama"
+  },
+  {
+    "id": "rep-1782157188006",
+    "studentId": "stu-1782157181393",
+    "studentName": "Prueba",
+    "course": "1er año",
+    "school": "villa",
+    "answers": {
+      "q1": "tecnologia",
+      "q2": "salud",
+      "q3": "comunicacion",
+      "q4": "salud",
+      "q5": "salud"
+    },
+    "scores": {
+      "tecnologia": 1,
+      "salud": 3,
+      "educacion": 0,
+      "administracion": 0,
+      "arte": 0,
+      "comunicacion": 1,
+      "sociales": 0
+    },
+    "topAreas": [
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 3
+      },
+      {
+        "area": "tecnologia",
+        "label": "Tecnologia",
+        "score": 1
+      },
+      {
+        "area": "comunicacion",
+        "label": "Comunicacion",
+        "score": 1
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "ing-sistemas",
+        "name": "Ingenieria en Sistemas",
+        "area": "tecnologia",
+        "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "analista-sistemas",
+        "name": "Analista de Sistemas",
+        "area": "tecnologia",
+        "institution": "Instituto Superior Santo Domingo",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "marketing",
+        "name": "Marketing Digital",
+        "area": "comunicacion",
+        "institution": "Colegio Universitario IES",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Comunicacion comercial, estrategias digitales y analisis de publicos.",
+        "reason": "Coincide con tu afinidad por comunicacion."
+      }
+    ],
+    "createdAt": "2026-06-22T19:39:48.006Z",
+    "aiSummary": "Prueba, soy tu orientador vocacional y estoy aquí para ayudarte a encontrar la carrera perfecta que refleje tus pasiones y talentos; con un pequeño impulso hacia los sistemas de tecnología y una inclinación natural por las habilidades comunicativas, podrías brillar como enfermero en salud pública o técnico médico para fusionar suerte profesional con tu interés subyacente en la ciencia; asimismo, si deseas que cada paso sea un acto de cuidado y mejoramiento social, el ingeniería aeroespacial te ofrece una ventana única al cosmos usando tus habilidades técndeicas.",
+    "engine": "ai:ollama"
+  },
+  {
+    "id": "rep-1782157375892",
+    "studentId": "stu-1782157367666",
+    "studentName": "Prueba",
+    "course": "6to",
+    "school": "i",
+    "answers": {
+      "q1": "educacion",
+      "q2": "salud",
+      "q3": "comunicacion",
+      "q4": "administracion",
+      "q5": "comunicacion"
+    },
+    "scores": {
+      "tecnologia": 0,
+      "salud": 1,
+      "educacion": 1,
+      "administracion": 1,
+      "arte": 0,
+      "comunicacion": 2,
+      "sociales": 0
+    },
+    "topAreas": [
+      {
+        "area": "comunicacion",
+        "label": "Comunicacion",
+        "score": 2
+      },
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 1
+      },
+      {
+        "area": "educacion",
+        "label": "Educacion",
+        "score": 1
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "marketing",
+        "name": "Marketing Digital",
+        "area": "comunicacion",
+        "institution": "Colegio Universitario IES",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Comunicacion comercial, estrategias digitales y analisis de publicos.",
+        "reason": "Coincide con tu afinidad por comunicacion."
+      },
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "profesorado-matematica",
+        "name": "Profesorado de Matematica",
+        "area": "educacion",
+        "institution": "Instituto Superior del Profesorado Tecnologico",
+        "modality": "Presencial",
+        "duration": "4 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion docente para ensenar matematica en nivel secundario y superior.",
+        "reason": "Coincide con tu afinidad por educacion."
+      }
+    ],
+    "createdAt": "2026-06-22T19:42:55.892Z",
+    "aiSummary": "Cariño Prueba, tus habilidades comunicativas sobresales y pueden convertirte en un influencer digital que cultive lazos sólidos entre marca y cliente; considera el Marketing Digital como una vía para expresar tu creatividad. Enfermería te ofrece no solo satisfacer tu interés por ayudar sino también brindarte estabilidad financiera, mientras que Bioquímica puede ser un camino espectacular donde la ciencia y la comunicación van de la mano para transformar vidas. Y como maestro en Matemática, podrías convertirte en el guía luminoso a través del cual los jóvenes descubrirán sus propios mundos académicos e intereses personales.",
+    "engine": "ai:ollama"
+  },
+  {
+    "id": "rep-1782164883680",
+    "studentId": "stu-1782164873679",
+    "studentName": "Juan",
+    "course": "3ero",
+    "school": "IBAT",
+    "answers": {
+      "q1": "tecnologia",
+      "q2": "salud",
+      "q3": "tecnologia",
+      "q4": "administracion",
+      "q5": "salud"
+    },
+    "scores": {
+      "tecnologia": 2,
+      "salud": 2,
+      "educacion": 0,
+      "administracion": 1,
+      "arte": 0,
+      "comunicacion": 0,
+      "sociales": 0
+    },
+    "topAreas": [
+      {
+        "area": "tecnologia",
+        "label": "Tecnologia",
+        "score": 2
+      },
+      {
+        "area": "salud",
+        "label": "Salud",
+        "score": 2
+      },
+      {
+        "area": "administracion",
+        "label": "Administracion",
+        "score": 1
+      }
+    ],
+    "recommendations": [
+      {
+        "id": "ing-sistemas",
+        "name": "Ingenieria en Sistemas",
+        "area": "tecnologia",
+        "institution": "Universidad Tecnologica Nacional - Facultad Regional Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Formacion en desarrollo de software, sistemas de informacion y gestion tecnologica.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "analista-sistemas",
+        "name": "Analista de Sistemas",
+        "area": "tecnologia",
+        "institution": "Instituto Superior Santo Domingo",
+        "modality": "Presencial / Virtual",
+        "duration": "3 anos",
+        "location": "Cordoba Capital",
+        "description": "Carrera corta orientada al analisis, programacion y soporte de sistemas.",
+        "reason": "Coincide con tu afinidad por tecnologia."
+      },
+      {
+        "id": "enfermeria",
+        "name": "Enfermeria",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Atencion sanitaria, cuidado de pacientes y trabajo en equipos de salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "bioquimica",
+        "name": "Bioquimica",
+        "area": "salud",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Analisis clinicos, laboratorio, investigacion y control de calidad en salud.",
+        "reason": "Coincide con tu afinidad por salud."
+      },
+      {
+        "id": "contador",
+        "name": "Contador Publico",
+        "area": "administracion",
+        "institution": "Universidad Nacional de Cordoba",
+        "modality": "Presencial",
+        "duration": "5 anos",
+        "location": "Cordoba Capital",
+        "description": "Gestion contable, impositiva, financiera y administrativa de organizaciones.",
+        "reason": "Coincide con tu afinidad por administracion."
+      }
+    ],
+    "createdAt": "2026-06-22T21:48:03.680Z",
+    "aiSummary": "Juan, sabes que tu curiosidad por la tecnología es un gran atributo para una carrera en ingeniería o como analista de sistemas, donde puedes innovar y solucionar problemas diarios; además, con los campos emergentes en administrastaticion te permitirán dirigir equipos a través del uso eficiente de estos herramientas.\n\n\nPor otro lado, aunque la salud no fue tu punto fuerte aquí, suponer que podrías disfrutar explorando nuevos métodos y tecnologías para mejorar el bienestar humano se enmarcaría perfectamente junto a las carreras de bioquímica o enfermería.",
+    "engine": "ai:ollama"
   }
 ]

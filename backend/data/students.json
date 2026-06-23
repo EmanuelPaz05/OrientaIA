@@ -52,5 +52,41 @@
     "school": "asd",
     "interests": "asd",
     "createdAt": "2026-06-19T11:52:35.881Z"
+  },
+  {
+    "id": "stu-1782157181393",
+    "name": "Prueba",
+    "age": "20",
+    "course": "1er año",
+    "school": "villa",
+    "interests": ".",
+    "createdAt": "2026-06-22T19:39:41.393Z"
+  },
+  {
+    "id": "stu-1782157367666",
+    "name": "Prueba",
+    "age": "20",
+    "course": "6to",
+    "school": "i",
+    "interests": ".",
+    "createdAt": "2026-06-22T19:42:47.666Z"
+  },
+  {
+    "id": "stu-1782164810363",
+    "name": "Juan",
+    "age": "22",
+    "course": "6",
+    "school": "IBAT",
+    "interests": "Tecnoliga",
+    "createdAt": "2026-06-22T21:46:50.363Z"
+  },
+  {
+    "id": "stu-1782164873679",
+    "name": "Juan",
+    "age": "22",
+    "course": "3ero",
+    "school": "IBAT",
+    "interests": "Tecnologia",
+    "createdAt": "2026-06-22T21:47:53.679Z"
   }
 ]
