@@ -1,8 +1,62 @@
-# OrientaIA
+<div align="center">
+
+# OrientaIA — Automatización de reportes vocacionales
+
+[![React](https://img.shields.io/badge/Frontend-React-149eca?logo=react&logoColor=white)](https://react.dev/)
+[![Node.js](https://img.shields.io/badge/Backend-Node.js-43853d?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Express](https://img.shields.io/badge/API-Express-333333?logo=express&logoColor=white)](https://expressjs.com/)
+
+**Proyecto realizado por Emanuel Paz y Juan Bertossi.**
+
+</div>
+
+## ¿Qué proceso automatiza?
+
+En lugar de analizar manualmente cada cuestionario de orientación vocacional, el sistema recibe las respuestas de un estudiante, calcula afinidades por área, selecciona carreras relacionadas y genera un reporte que puede consultar el orientador.
+
+**Flujo implementado:**
+
+```mermaid
+flowchart LR
+  A[Alumno completa cuestionario] --> B[API Express]
+  B --> C[Motor de puntuación por áreas]
+  C --> D[Selección de carreras recomendadas]
+  D --> E{¿IA configurada?}
+  E -->|Sí| F[Generar análisis adicional con IA]
+  E -->|No o error| G[Conservar reporte basado en reglas]
+  F --> H[Guardar reporte en JSON]
+  G --> H
+  H --> I[Consulta del alumno y estadísticas del orientador]
+```
+
+**Entrada:** datos del alumno y respuestas a cinco preguntas.  
+**Salida:** puntajes, tres áreas principales, hasta cinco carreras recomendadas y, opcionalmente, un análisis en lenguaje natural generado por IA.  
+**Persistencia:** archivos JSON locales.  
+**Comportamiento ante fallas:** si el servicio de IA no está configurado o falla, el reporte se guarda usando el motor de reglas.
+
+## Arquitectura resumida
+
+- **Interfaz:** React + Vite para alumnos, orientadores y configuración de IA.
+- **API:** Express con endpoints para alumnos, cuestionarios, reportes y estadísticas.
+- **Lógica de negocio:** cálculo de puntajes y recomendación de carreras.
+- **Integración opcional:** adaptadores para Ollama, OpenAI, Claude y Gemini.
+- **Datos:** archivos JSON; esta versión no requiere configurar un servidor SQL.
+
+## Demostración sugerida para el coloquio
+
+1. Iniciar el proyecto con `npm run install:all` (primera vez) y `npm run dev`.
+2. Abrir `http://localhost:5173`.
+3. Crear un estudiante ficticio y responder el cuestionario.
+4. Mostrar el reporte generado sin intervención manual.
+5. Consultar las estadísticas del orientador y explicar cómo funciona el modo opcional con IA.
+
+**Nota:** el README documenta el flujo previsto a partir del código fuente; esto no sustituye probar la ejecución local antes del coloquio.
+
+---
+
+## Documentación de instalación y uso
 
 Asistente de orientacion vocacional para alumnos de los ultimos anos del secundario (5to y 6to ano). El alumno completa un cuestionario, la IA analiza su perfil y genera un reporte con areas de afinidad y carreras recomendadas. Incluye panel del orientador con estadisticas grupales.
-
-Autores: Emanuel Paz y Juan Bertossi — Grupo 5.
 
 ## Requisitos previos
 
