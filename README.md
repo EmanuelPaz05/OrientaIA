@@ -1,16 +1,16 @@
 <div align="center">
 
-# OrientaIA — Automatización de reportes vocacionales
+# OrientaIA — Proyecto académico de orientación vocacional
 
 [![React](https://img.shields.io/badge/Frontend-React-149eca?logo=react&logoColor=white)](https://react.dev/)
 [![Node.js](https://img.shields.io/badge/Backend-Node.js-43853d?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/API-Express-333333?logo=express&logoColor=white)](https://expressjs.com/)
 
-**Proyecto realizado por Emanuel Paz y Juan Bertossi.**
+**Proyecto de facultad desarrollado por Emanuel Paz y Juan Bertossi.** No es un producto comercial ni un sistema en uso continuo.
 
 </div>
 
-## ¿Qué proceso automatiza?
+## Qué hace el proyecto
 
 En lugar de analizar manualmente cada cuestionario de orientación vocacional, el sistema recibe las respuestas de un estudiante, calcula afinidades por área, selecciona carreras relacionadas y genera un reporte que puede consultar el orientador.
 
